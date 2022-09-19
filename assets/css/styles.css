@@ -1,0 +1,703 @@
+/* Reset CSS */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family:Arial, Helvetica, sans-serif;
+
+}
+   /* 1. Vị trí 
+   2. Kích thước ( width  , height )
+   3.Màu sắc
+   4.Kiểu dáng  */
+
+   /* Làm từ ngoài vào trong , từ trên xuống dưới , từ tổng quan đênc hi tiết */
+
+
+/* Common */
+ .clear{
+    clear: both;
+}  
+
+
+
+.row{
+    padding: 32px 0px;
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+
+.col{
+    margin-bottom: 16px;
+    padding: 0 8px;
+}
+
+.float-left{
+    float: left;
+}
+
+.float-right{
+    float: right;
+}
+
+.col-thirt{
+    width: 33.33333%;
+}
+
+.text-center{
+    text-align: center !important;
+}
+
+.col-half{
+    width: 50%;
+}
+
+.col-full{
+    width: 100%;
+}
+
+
+.btn{
+    background-color: #000;
+    color: #fff;
+    margin-bottom: 16px;
+    padding: 8px 16px;
+    width: 119px;
+    font-size: 15px;
+    text-align: center;
+    line-height: 1.5;
+    text-decoration: none;
+    display: block;
+    border: none;
+}
+
+.btn:hover{
+    color: #000;
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+.contact-section{
+    padding: 32px 0;
+}
+/* End : Common */
+
+
+/* Start : Header */
+#header{
+    height: 46.5px;
+    background-color: #000;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+#nav{
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+#nav li{
+    display: inline-block;
+    position: relative;
+}
+
+#nav>li>a{
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    line-height: 46.5px;
+    padding: 0 24px;
+}
+
+#nav > li:hover > a{
+    color:#000;
+    background-color: #ccc;
+}
+
+#nav .subnav{
+    background-color: #fff;
+    position: absolute;
+    top: 47px;
+    left: 0px;
+    box-shadow: -10px 10px 8px rgb(0 0 0 /20%);
+}
+
+#nav .subnav a{
+    text-decoration: none;
+    color: #000;
+    
+    padding: 0 16px;
+    line-height: 38.5px;
+    
+}
+
+#nav .subnav li{
+     min-width: 180px;
+     display:block;
+     
+}
+
+#nav .subnav li:hover{
+    background-color: #ccc;
+}
+
+.subnav{
+    display: none;
+}
+
+li:hover .subnav{
+    display: block;
+}
+
+#nav .down{
+    font-size: 12px;
+    position: absolute;
+    top:30%;
+    left: 80%;
+}
+
+#header .search,.bars{
+    position: absolute;
+    padding: 0 23px;
+    line-height: 46.5px;
+    top:0;
+    right: 0;
+}
+
+
+
+.search:hover ,.bars:hover{   
+    background-color: #f44336;
+    color: #fff;
+    cursor: pointer;
+}
+.search .search-icon,.bars{
+    color: #fff;
+}
+
+
+/* End: Header */
+
+
+
+
+/* Start: Slider */
+#slider {
+    padding-top:50% ;
+    margin-top: 46.5px;
+    background: url('https://www.w3schools.com/w3images/chicago.jpg') top center /cover no-repeat;
+    position: relative;
+
+}
+
+.text-content{
+    color: rgb(255, 252, 252);
+    position: absolute;
+    bottom:0%;
+    padding: 47px 16px;
+    text-align: center;
+    width: 100%;
+    font-size: 24px;
+   
+}
+.text-content .text-first{
+    margin-bottom: 30px;
+    font-weight: 300;
+}
+
+/* End : Slider */
+
+
+
+/* Start : Content */
+
+#content .content-section{
+   
+   padding: 64px 16px;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#content .content-section .head-content{
+    margin: 10px 0;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 30px;
+    text-align: center;
+    letter-spacing: 4px;
+}
+
+#content .content-section .slogan{
+    font-style: italic;
+    opacity: 0.6;
+    margin: 15px 0;
+    text-align: center;
+    font-size: 15px;
+}
+
+#content .content-section .main-content{
+    margin: 15px 0;
+    text-align: justify;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+
+
+
+
+.card .mini-card .name{
+    font-size: 15px;
+}
+
+#content .image{
+    margin-top: 15px;
+    border-radius: 5px;
+    width: 150px;
+}
+
+/* Begin: Tour */
+.tour{
+    color: #fff;
+    background: #000;
+
+}
+.ticket{
+    margin-top: 40px;
+}
+
+.ticket .mini-ticket{
+    padding: 8px 16px;
+    background-color:#fff ;
+    color: #757575;
+    border-top: 1px solid #ddd ;
+    font-size: 15px;
+    list-style: none;
+   
+}
+
+.mini-ticket .condition{
+    margin-left:16px ;
+    padding: 4px 8px;
+    background: #f44336;
+    color: #fff;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.mini-ticket .three{
+    background-color: #000;
+    color: #fff;
+    border-radius: 50%;
+    padding: 0 8px;
+    line-height: 1.5;
+    margin-right: 16px;
+    text-align: center;
+    float: right;
+    margin-top: -3px;
+}
+.mini-ticket .time{
+    display: inline-block;
+   
+}
+
+
+.place{
+    width: 33.3333%;
+    float: left;
+    margin-bottom: 16px;
+    padding: 0 8px;
+}
+
+.tour-main{
+    background-color: #fff;
+    color: #000;
+}
+
+.place .image-tour{
+    width: 100%;
+    display: block;
+}
+
+.place .tour-main{
+    padding: 0.15px 16px;
+}
+
+.place .tour-main .name{
+    margin: 15px 0;
+    font-size: 15px;
+    line-height: 1.5;
+    font-weight: bolder;
+}
+
+.place .tour-main .time{
+    margin: 15px 0;
+    opacity: 0.6;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.place .tour-main .tour-content{
+    margin: 15px 0;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+
+.image-tour:hover{
+    opacity: 0.6;
+}
+
+
+
+
+
+
+.mini-contact i{
+    width: 30px;
+}
+/* End : Content */
+
+.modal.open{
+    display: flex;
+}
+
+
+.modal{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0, 0.4);
+    align-items: center;
+    justify-content: center;
+    display: none ;
+}
+
+
+
+.modal-container{
+    background-color: #fff;
+    width: 900px;
+    max-width: calc(100%-32px);
+    min-height: 200px;
+    position: relative;
+    animation: modalFadeIn ease 0.8s;
+}
+
+
+.modal-header{
+    background-color: #009688;
+    padding: 42px 16px;
+    color: #fff;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 400px;
+    letter-spacing: 4px;
+   
+}
+
+.modal-container .close{
+    position: absolute;
+    top:0;
+    right: 0;
+    color: #fff;
+    font-size: 24px;
+    padding: 8px 16px;
+
+}
+
+.modal-container .close:hover{
+    background-color: #ccc;
+    color: #000;
+    cursor: pointer;
+}
+
+.modal-body{
+    padding: 0 15px;
+}
+
+.modal-label{
+    margin-top: 25px;
+    margin-bottom: 5px;
+    font-size: 15px;
+    display: block;
+    
+}
+
+.modal-input{
+    padding: 8px;
+    border: #ccc solid 1.2px;
+    width: 100%;
+}
+
+.pay{
+    background-color: #009688;
+    color: #fff;
+    margin: 16px 0;
+    padding: 16px;
+    text-align: center;
+    font-size: 15px;
+    text-transform:uppercase ;
+}
+
+.pay:hover{
+    background-color: #ccc;
+    color: #000;
+}
+
+
+.close-body{
+    background-color: #f44336;
+    color: #fff;
+    text-align: center;
+    display: inline-block;
+    margin: 16px 0;
+    padding: 8px 16px;
+}
+
+.close-body:hover{
+    background-color: #ccc;
+    color: #000;
+}
+
+.need-help{
+    float: right;
+    margin: 20px 0;
+    display: block;
+}
+
+.need-help a{
+    color: blue;
+}
+
+@keyframes modalFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-150px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+
+.contact-infor{
+    font-size: 18px;
+}
+
+.contact-infor p i[class*="fa-"]{
+    width: 30px;
+    display: inline-block;
+    line-height: 1.5;
+}
+
+.contact-form{
+    padding: 8px;
+}
+
+.contact-form .form-control{
+   font-size: 15px;
+    padding: 8px;
+    width: 100%;
+    border: #ccc solid 1px;
+}
+
+
+
+.final-image{
+    width: 100%;
+    height: auto;
+}
+
+.form-submit-button{
+    float: right;
+    margin-right: 8px;
+}
+
+.footer{
+    padding: 64px 16px ;
+    text-align: center;
+}
+
+.social{
+    font-size: 24px;
+}
+
+.social a{
+    color: rgb(132, 125, 125) ;
+}
+
+.social a:hover{
+    opacity: 0.5;
+}
+
+.copyright{
+    margin: 15px 0;
+    color: rgb(132, 125, 125) ;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+/* PC */
+@media screen and (min-width:1024px){
+    .bars{
+        display: none;
+    }
+}
+/* End: PC */
+
+
+/* Table */
+@media only screen and (min-width:741px) and (max-width:1023px){
+    #content .content-section {
+        width: 100%;
+    }
+
+    .bars{
+        display: none;
+    }
+    
+}
+/*End : Table */
+
+
+
+/* Mobile */
+@media screen and (max-width:740px){
+    #header{
+        overflow:hidden ;
+    }
+
+    #nav .subnav{
+        position: initial;
+        background-color: rgb(160, 158, 158);
+        padding-left: 20px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+
+    #nav{
+        display: block;
+    }
+
+    #nav li {
+        display: block;
+      
+    }
+
+    #nav > li:first-child{
+        display: inline-block;
+    }
+
+
+
+    #nav li a{
+        display: block;
+    }
+
+    #nav .down{
+        left: 22%;
+        top:12px
+    }
+
+    #header .search,.bars {
+        display: none;
+    }
+
+    #content .content-section {
+       width: 100%;
+    }
+    
+    .text-content {
+        display: none;
+    }
+
+    #content .image {
+        width: 50%;
+        margin-top:0px;
+    }
+
+    .float-left {
+        float: none;
+    }
+
+    .col-thirt {
+        width: 100%;
+    }
+
+    .mini-card p{
+        display: block;
+        margin: 16px 0px;
+    }
+
+    .contact-form{
+        width: 100%;
+        float: none;
+    }
+
+    .contact-infor{
+        width: 100%;
+    }
+
+    .contact-big-form{
+        width: auto;
+        float: none;
+    }
+
+    .bars{
+        display: block;
+    }
+
+    .btn{
+        padding: 13px  16px ;
+        width: 100%;
+    }
+
+    .form-submit-button{ 
+        margin: 8px 8px;
+        width: 95%;
+    }
+
+    
+}
+
+/* End:Mobile */
+
+
+
+/* Tablet and Mobile */
+@media screen and (max-width:1023px){
+    .btn{
+        padding: 13px  16px ;
+      
+    }
+
+    .contact-form .form-control{
+        padding: 12px 5px;
+    }
+
+    .social a{
+        font-size: 150%;
+        padding: 10px;
+    }
+
+    .copyright {
+        margin:10% 0;
+        padding: 5%;
+    }
+}
